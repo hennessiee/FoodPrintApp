@@ -13,10 +13,17 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ItemAdapter(context: Context):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
-    private val list: List<String>
+    private var list:MutableList<String>
     init{
-              val items=context.resources.getStringArray(R.array.Description).toList()
-                list=items
+        list= mutableListOf()
+        val items= listOf(
+            PlanItem("Item 1","This is item 1","Impact 1"),
+            PlanItem("Item 2","This is item 1","Impact 1"),
+            PlanItem("Item 3","This is item 1","Impact 1")
+        )
+        for (item in items){
+            list.add(item.title)
+        }
     }
 
     //Creating the view (what is in the view?)

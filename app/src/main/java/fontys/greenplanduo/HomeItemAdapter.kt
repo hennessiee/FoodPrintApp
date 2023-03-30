@@ -1,6 +1,7 @@
 package fontys.greenplanduo
 
 import android.content.Context
+import android.media.session.MediaController.PlaybackInfo
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,10 +11,14 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 class HomeItemAdapter(context: Context): RecyclerView.Adapter<HomeItemAdapter.HomeItemViewHolder>() {
-    private val list:List<String>
+    private var list:MutableList<String>
     init{
-        val items=context.resources.getStringArray(R.array.items).toList()
-        list=items
+        list= mutableListOf()
+        val items= PlanItemList.items
+
+        for (item in items){
+            list.add(item.title)
+        }
     }
     class HomeItemViewHolder(val view:View):RecyclerView.ViewHolder(view){
         val button=view.findViewById<Button>(R.id.bt_item)
@@ -24,7 +29,7 @@ class HomeItemAdapter(context: Context): RecyclerView.Adapter<HomeItemAdapter.Ho
     ): HomeItemAdapter.HomeItemViewHolder {
         val layout= LayoutInflater
             .from(parent.context)
-            .inflate(R.layout.recycler_view_item,parent,false)
+            .inflate(R.layout.recycler_view_home,parent,false)
 
         return HomeItemViewHolder(layout)
     }

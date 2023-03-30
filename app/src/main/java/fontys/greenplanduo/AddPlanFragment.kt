@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import fontys.greenplanduo.databinding.FragmentAddPlanBinding
@@ -34,6 +35,12 @@ class AddPlanFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         recyclerView    = binding.recyclerView
         chooseLayout()
+        binding.apply{
+            btBackFromAddPlan.setOnClickListener {
+                val direction=AddPlanFragmentDirections.actionAddPlanFragmentToHomeFragment()
+                findNavController().navigate(direction)
+            }
+        }
     }
     private fun chooseLayout(){
         recyclerView.layoutManager=LinearLayoutManager(context)

@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_addPlanFragment_to_viewDetailsFragment2"
             app:destination="@id/viewDetailsFragment2" />
+        <action
+            android:id="@+id/action_addPlanFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/viewDetailsFragment2"
