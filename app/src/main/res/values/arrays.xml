@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items">
+        <item>Today</item>
+        <item>We</item>
+        <item>Are</item>
+        <item>Going</item>
+        <item>To</item>
+        <item>Make</item>
+        <item>an</item>
+        <item>App</item>
+        <item>That</item>
+        <item>Doesnt</item>
+        <item>work</item>
+        <item>Jordan</item>
+
+    </string-array>
+    <string-array name="Description">
+        <item>Joseph</item>
+        <item>Maikel</item>
+
+    </string-array>
+</resources>
