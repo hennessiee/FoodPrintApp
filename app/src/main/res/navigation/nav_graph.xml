@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_homeFragment_to_addPlanFragment"
             app:destination="@id/addPlanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewDetailsFragment2"
+            app:destination="@id/viewDetailsFragment2" />
     </fragment>
     <fragment
         android:id="@+id/addPlanFragment"

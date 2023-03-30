@@ -7,11 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import fontys.greenplanduo.databinding.FragmentHomeBinding
 
 
 class HomeFragment : Fragment() {
     private lateinit var binding:FragmentHomeBinding
+    private lateinit var recyclerView: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,10 +26,13 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        recyclerView=binding.recyclerView
+        recyclerView.layoutManager=LinearLayoutManager(context)
+        recyclerView.adapter=HomeItemAdapter(requireContext())
         binding.apply{
+
             btAdd.setOnClickListener{
-                val direction=HomeFragmentDirections.actionHomeFragmentToAddPlanFragment()
-                findNavController().navigate(direction)
+                findNavController().navigate(R.id.action_homeFragment_to_addPlanFragment)
             }
         }
     }
