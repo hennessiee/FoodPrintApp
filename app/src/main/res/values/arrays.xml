@@ -1,23 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="items">
-        <item>Today</item>
-        <item>We</item>
-        <item>Are</item>
-        <item>Going</item>
-        <item>To</item>
-        <item>Make</item>
-        <item>an</item>
-        <item>App</item>
-        <item>That</item>
-        <item>Doesnt</item>
-        <item>work</item>
-        <item>Jordan</item>
+    <string-array name="protein">
+        <item>Select Item</item>
 
+        <item>Beef</item>
+        <item>Chicken/Poultry</item>
+        <item>Cod</item>
+        <item>Lamb</item>
+        <item>Mackerel</item>
+        <item>Pork</item>
+        <item>Prawn</item>
+        <item>Salmon</item>
+        <item>Tuna</item>
     </string-array>
-    <string-array name="Description">
-        <item>Joseph</item>
-        <item>Maikel</item>
+    <integer-array name="protein_co2">
+        <item>90</item>
+    </integer-array>
+    <string-array name="Carbohydrate">
+        <item>Select Item</item>
 
+        <item>Baguette</item>
+        <item>Bread</item>
+        <item>Croissants</item>
+        <item>Doughnut</item>
+        <item>Granola</item>
+        <item>Muesli</item>
+        <item>Naan Bread</item>
+        <item>Pancakes</item>
+        <item>Potatoes</item>
+        <item>Pita Bread</item>
+        <item>Rice</item>
+        <item>Sourdough Bread</item>
+        <item>Spaghetti</item>
+        <item>Sweet Corn</item>
+        <item>Tofu</item>
+        <item>Tortilla Wraps</item>
+    </string-array>
+
+    <string-array name="Vegetable">
+        <item>Select Item</item>
+
+        <item>Broccoli</item>
+        <item>Beetroot</item>
+        <item>Cucumber</item>
+        <item>Courgette</item>
+        <item>Corn</item>
+        <item>Carrots</item>
+        <item>Cauliflower</item>
+        <item>Lettuce</item>
+        <item>Lentils</item>
+        <item>Mixed Salad</item>
+        <item>Mushroom</item>
+        <item>Naan Bread</item>
+        <item>Naan Bread</item>
+        <item>Onions</item>
+        <item>Peas</item>
+        <item>Tomatoes</item>
+    </string-array>
+
+<string-array name="Fruits">
+    <item>Select Item</item>
+    <item>Apples</item>
+    <item>Avocados</item>
+    <item>Bananas</item>
+    <item>Grapes</item>
+    <item>Kiwis</item>
+    <item>Lemons</item>
+    <item>Limes</item>
+    <item>Melons</item>
+    <item>Oranges</item>
+    <item>Pears</item>
+    <item>Pineapples</item>
+    <item>Raspberries</item>
+    <item>Strawberries</item>
+    <item>Watermelon</item>
+</string-array>
+
+    <string-array name="Milk_Dairy">
+        <item>Select Item</item>
+        <item>Coconut Milk</item>
+        <item>Cow Milk</item>
+        <item>Dark Chocolate</item>
+        <item>Eggs</item>
+        <item>Goat Cheese</item>
+        <item>Milk Chocolate</item>
+        <item>Oat Milk</item>
+        <item>Parmesan Cheese</item>
+        <item>Ricotta Cheese</item>
+        <item>Soy Milk</item>
     </string-array>
 </resources>

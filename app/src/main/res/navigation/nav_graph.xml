@@ -10,30 +10,42 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_addPlanFragment"
-            app:destination="@id/addPlanFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_viewDetailsFragment2"
-            app:destination="@id/viewDetailsFragment2" />
+            android:id="@+id/action_homeFragment_to_carbonEmission"
+            app:destination="@id/carbonEmission" />
     </fragment>
     <fragment
-        android:id="@+id/addPlanFragment"
-        android:name="fontys.greenplanduo.AddPlanFragment"
-        android:label="fragment_add_plan"
-        tools:layout="@layout/fragment_add_plan" >
+        android:id="@+id/carbonEmission"
+        android:name="fontys.greenplanduo.CarbonEmission"
+        android:label="fragment_carbon_emission"
+        tools:layout="@layout/fragment_carbon_emission" >
         <action
-            android:id="@+id/action_addPlanFragment_to_viewDetailsFragment2"
-            app:destination="@id/viewDetailsFragment2" />
+            android:id="@+id/action_carbonEmission_to_waterEmission"
+            app:destination="@id/waterEmission" />
+        <argument
+            android:name="protein"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterEmission"
+        android:name="fontys.greenplanduo.WaterEmission"
+        android:label="fragment_water_emission"
+        tools:layout="@layout/fragment_water_emission" >
         <action
-            android:id="@+id/action_addPlanFragment_to_homeFragment"
+            android:id="@+id/action_waterEmission_to_facts"
+            app:destination="@id/facts" />
+    </fragment>
+    <fragment
+        android:id="@+id/facts"
+        android:name="fontys.greenplanduo.Facts"
+        android:label="fragment_facts"
+        tools:layout="@layout/fragment_facts" >
+        <action
+            android:id="@+id/action_facts_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/viewDetailsFragment2"
-        android:name="fontys.greenplanduo.ViewDetailsFragment"
-        android:label="fragment_view_details"
-        tools:layout="@layout/fragment_view_details" >
-        <argument android:name="item"
-            app:argType="string" />
-    </fragment>
+        android:id="@+id/checker"
+        android:name="fontys.greenplanduo.checker"
+        android:label="fragment_checker"
+        tools:layout="@layout/fragment_checker" />
 </navigation>

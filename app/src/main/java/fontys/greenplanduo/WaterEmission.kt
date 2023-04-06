@@ -5,29 +5,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import fontys.greenplanduo.databinding.FragmentViewDetailsBinding
-import androidx.navigation.fragment.navArgs
+import androidx.navigation.fragment.findNavController
+import fontys.greenplanduo.databinding.FragmentWaterEmissionBinding
 
 
-class ViewDetailsFragment : Fragment() {
-    private val args:ViewDetailsFragmentArgs by navArgs()
-    private var item=""
-private lateinit var binding: FragmentViewDetailsBinding
+class WaterEmission : Fragment() {
 
+private lateinit var binding: FragmentWaterEmissionBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding= FragmentViewDetailsBinding.inflate(inflater,container,false)
+        binding= FragmentWaterEmissionBinding.inflate(inflater,container,false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            item=args.item
-            tvDetails.text= item
+            btNextToFacts.setOnClickListener {
+                findNavController().navigate(R.id.action_waterEmission_to_facts)
+            }
         }
     }
+
 
 }
