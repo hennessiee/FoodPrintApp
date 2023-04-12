@@ -9,6 +9,7 @@ import androidx.navigation.NavArgs
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import fontys.greenplanduo.databinding.FragmentWaterEmissionBinding
+import java.math.BigDecimal
 
 
 class WaterEmission : Fragment() {
@@ -27,13 +28,18 @@ private lateinit var binding: FragmentWaterEmissionBinding
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             waterEmission=args.waterEmission
-            tvWaterEmission.text=waterEmission.toString()
-            btNextToFacts.setOnClickListener {
+            tvWaterEmission.text=waterEmission.toString()+"Litres of water"
 
+            var showerNumber=(waterEmission/9).toFloat()
+            var showerStripZeros=String.format("%.3f", showerNumber).replace("\\.?0*$".toRegex(), "")
+
+            var showerEquivalent=showerStripZeros+" minutes of showering"
+
+            tvShowerEquivalent.text=showerEquivalent
+
+            btNextToFacts.setOnClickListener {
                 findNavController().navigate(R.id.action_waterEmission_to_facts)
             }
         }
     }
-
-
 }

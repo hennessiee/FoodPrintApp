@@ -38,7 +38,6 @@ class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
         binding.apply{
             getAllFoodData()
             spProtein.onItemSelectedListener=this@HomeFragment
-
             spCarbs.onItemSelectedListener=this@HomeFragment
             spVeggies.onItemSelectedListener=this@HomeFragment
             spDairy.onItemSelectedListener=this@HomeFragment

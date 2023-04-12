@@ -34,4 +34,18 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_waterEmission"
         app:layout_constraintVertical_bias="0.94" />
 
+    <TextView
+        android:id="@+id/tvShowerEquivalent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="467dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_waterEmission" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
