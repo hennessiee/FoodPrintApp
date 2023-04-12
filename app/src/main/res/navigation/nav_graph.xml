@@ -22,8 +22,11 @@
             android:id="@+id/action_carbonEmission_to_waterEmission"
             app:destination="@id/waterEmission" />
         <argument
-            android:name="protein"
-            app:argType="string" />
+            android:name="carbonEmission"
+            app:argType="float" />
+        <argument
+            android:name="waterEmission"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/waterEmission"
@@ -33,6 +36,9 @@
         <action
             android:id="@+id/action_waterEmission_to_facts"
             app:destination="@id/facts" />
+        <argument
+            android:name="waterEmission"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/facts"

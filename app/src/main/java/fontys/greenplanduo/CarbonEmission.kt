@@ -13,7 +13,8 @@ import fontys.greenplanduo.databinding.FragmentCarbonEmissionBinding
 
 class CarbonEmission : Fragment() {
     private val args:CarbonEmissionArgs by navArgs()
-    private var protein=""
+    private var carbonEmission:Float=0f
+    private var waterEmission:Int=0
     private lateinit var binding:FragmentCarbonEmissionBinding
 
 
@@ -28,10 +29,17 @@ class CarbonEmission : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            protein=args.protein
-            textView3.text=protein
+            carbonEmission=args.carbonEmission
+            waterEmission=args.waterEmission
+
+            var carbonEmissionShortened=String.format("%.3f", carbonEmission)
+            textView3.text=carbonEmissionShortened
+            var carEquivalent=carbonEmission.times( 0.196974607)
+            tvKmOfCar.text=String.format("%.3f", carEquivalent)
+
             btNextToWater.setOnClickListener {
-                findNavController().navigate(R.id.action_carbonEmission_to_waterEmission)
+                val direction=CarbonEmissionDirections.actionCarbonEmissionToWaterEmission(waterEmission)
+                findNavController().navigate(direction)
             }
         }
     }

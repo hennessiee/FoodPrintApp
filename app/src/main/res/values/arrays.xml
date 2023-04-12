@@ -13,12 +13,37 @@
         <item>Salmon</item>
         <item>Tuna</item>
     </string-array>
-    <integer-array name="protein_co2">
-        <item>90</item>
-    </integer-array>
+    <string-array name="p_co2">
+        <item>0</item>
+
+        <item>99.48</item>
+        <item>10.904</item>
+        <item>9.87</item>
+        <item>39.72</item>
+        <item>13.606</item>
+        <item>20.911</item>
+        <item>12.31</item>
+        <item>10.413</item>
+        <item>13.075</item>
+    </string-array>
+    <string-array name="p_water">
+        <item>0</item>
+
+        <item>1451</item>
+        <item>3177</item>
+        <item>660</item>
+        <item>1802</item>
+        <item>3961</item>
+        <item>3197</item>
+        <item>1795</item>
+        <item>1360</item>
+        <item>3771</item>
+    </string-array>
+
     <string-array name="Carbohydrate">
         <item>Select Item</item>
 
+        <item>Bagels</item>
         <item>Baguette</item>
         <item>Bread</item>
         <item>Croissants</item>
@@ -36,57 +61,193 @@
         <item>Tofu</item>
         <item>Tortilla Wraps</item>
     </string-array>
+    <string-array name="c_co2">
+        <item>0</item>
+
+        <item>99.48</item>
+        <item>10.904</item>
+        <item>9.87</item>
+        <item>39.72</item>
+        <item>13.606</item>
+        <item>20.911</item>
+        <item>12.31</item>
+        <item>10.413</item>
+        <item>13.075</item>
+        <item>10.904</item>
+        <item>9.87</item>
+        <item>39.72</item>
+        <item>13.606</item>
+        <item>20.911</item>
+        <item>12.31</item>
+        <item>10.413</item>
+        <item>13.075</item>
+    </string-array>
+    <string-array name="c_water">
+        <item>0</item>
+
+        <item>1451</item>
+        <item>3177</item>
+        <item>660</item>
+        <item>1802</item>
+        <item>3961</item>
+        <item>3197</item>
+        <item>1795</item>
+        <item>1360</item>
+        <item>3771</item>
+        <item>3177</item>
+        <item>660</item>
+        <item>1802</item>
+        <item>3961</item>
+        <item>3197</item>
+        <item>1795</item>
+        <item>1360</item>
+        <item>3771</item>
+    </string-array>
 
     <string-array name="Vegetable">
         <item>Select Item</item>
 
         <item>Broccoli</item>
-        <item>Beetroot</item>
         <item>Cucumber</item>
         <item>Courgette</item>
         <item>Corn</item>
         <item>Carrots</item>
         <item>Cauliflower</item>
         <item>Lettuce</item>
-        <item>Lentils</item>
         <item>Mixed Salad</item>
         <item>Mushroom</item>
-        <item>Naan Bread</item>
-        <item>Naan Bread</item>
         <item>Onions</item>
-        <item>Peas</item>
         <item>Tomatoes</item>
     </string-array>
+    <string-array name="v_co2">
+        <item>0</item>
 
-<string-array name="Fruits">
+        <item>99.48</item>
+        <item>10.904</item>
+        <item>9.87</item>
+        <item>39.72</item>
+        <item>13.606</item>
+        <item>20.911</item>
+        <item>12.31</item>
+        <item>10.413</item>
+        <item>13.075</item>
+        <item>10.413</item>
+        <item>13.075</item>
+    </string-array>
+    <string-array name="v_water">
+        <item>0</item>
+
+        <item>1451</item>
+        <item>3177</item>
+        <item>660</item>
+        <item>1802</item>
+        <item>3961</item>
+        <item>3197</item>
+        <item>1795</item>
+        <item>1360</item>
+        <item>3771</item>
+        <item>3177</item>
+        <item>660</item>
+    </string-array>
+
+    <string-array name="Fruits">
     <item>Select Item</item>
     <item>Apples</item>
-    <item>Avocados</item>
     <item>Bananas</item>
     <item>Grapes</item>
-    <item>Kiwis</item>
     <item>Lemons</item>
     <item>Limes</item>
     <item>Melons</item>
     <item>Oranges</item>
-    <item>Pears</item>
-    <item>Pineapples</item>
-    <item>Raspberries</item>
     <item>Strawberries</item>
     <item>Watermelon</item>
 </string-array>
+    <string-array name="f_co2">
+        <item>0</item>
+        <item>99.48</item>
+        <item>10.904</item>
+        <item>9.87</item>
+        <item>39.72</item>
+        <item>13.606</item>
+        <item>20.911</item>
+        <item>12.31</item>
+        <item>10.413</item>
+        <item>13.075</item>
+    </string-array>
+    <string-array name="f_water">
+        <item>0</item>
+        <item>1451</item>
+        <item>3177</item>
+        <item>660</item>
+        <item>1802</item>
+        <item>3961</item>
+        <item>3197</item>
+        <item>1795</item>
+        <item>1360</item>
+        <item>3771</item>
+    </string-array>
 
     <string-array name="Milk_Dairy">
         <item>Select Item</item>
         <item>Coconut Milk</item>
         <item>Cow Milk</item>
         <item>Dark Chocolate</item>
-        <item>Eggs</item>
         <item>Goat Cheese</item>
         <item>Milk Chocolate</item>
         <item>Oat Milk</item>
         <item>Parmesan Cheese</item>
-        <item>Ricotta Cheese</item>
         <item>Soy Milk</item>
+    </string-array>
+    <string-array name="d_co2">
+        <item>0</item>
+
+        <item>99.48</item>
+        <item>10.904</item>
+        <item>9.87</item>
+        <item>39.72</item>
+        <item>13.606</item>
+        <item>20.911</item>
+        <item>12.31</item>
+        <item>10.413</item>
+        <item>13.075</item>
+    </string-array>
+    <string-array name="d_water">
+        <item>0</item>
+
+        <item>1451</item>
+        <item>3177</item>
+        <item>660</item>
+        <item>1802</item>
+        <item>3961</item>
+        <item>3197</item>
+        <item>1795</item>
+        <item>1360</item>
+    </string-array>
+    <string-array name="facts">
+        <item>The production of meat and dairy products is a major contributor to greenhouse gas emissions and climate change, particularly due to the methane produced by cows and other ruminant animals.</item>
+        <item>Industrial agriculture practices such as the use of chemical fertilizers and pesticides can contribute to soil degradation, water pollution, and the loss of biodiversity.</item>
+        <item>The overfishing and destruction of marine habitats can lead to the depletion of fish populations and harm ocean ecosystems.</item>
+        <item>The production of crops such as corn and soybeans for use as animal feed can contribute to monoculture farming and the loss of soil health and fertility.</item>
+        <item>Eating a quarter-pound hamburger is equivalent to showering for 3 hours in terms of water usage.</item>
+        <item>Producing a pound of beef requires 20 times more land and emits 20 times more greenhouse gases than producing a pound of beans.</item>
+        <item>One pound of cheese requires about 10 pounds of milk, and dairy cows consume up to 100 pounds of feed per day.</item>
+        <item>Eating a 4-ounce serving of salmon is equivalent to leaving a 60-watt light bulb on for 4 hours in terms of greenhouse gas emissions.</item>
+        <item>A single avocado requires 60 gallons of water to produce, which is equivalent to showering for 6 minutes.</item>
+        <item>Producing a single pound of almonds requires over 1,900 gallons of water, which is equivalent to showering for 4 hours.</item>
+        <item>The average American wastes about 30% of the food they buy, which is equivalent to throwing away 165 billion dollars worth of food each year.</item>
+        <item>Eating a pound of chicken is equivalent to driving about 9.2 miles in terms of greenhouse gas emissions.</item>
+        <item>The production of a single pound of pork requires 2.5 times more water and generates 3.5 times more greenhouse gases than producing a pound of chicken.</item>
+        <item>Eating a 4-ounce serving of shrimp is equivalent to driving a car for over a mile in terms of greenhouse gas emissions.</item>
+        <item>Producing a pound of chocolate requires 3,170 gallons of water, which is equivalent to showering for over 2 weeks.</item>
+        <item>The average American consumes over 130 pounds of meat per year, which is more than double the global average.</item>
+        <item>Producing a pound of coffee requires about 2,000 gallons of water, which is equivalent to showering for 6 weeks.</item>
+        <item>The production of a single egg requires about 53 gallons of water, which is equivalent to leaving a faucet running for 2 hours.</item>
+        <item>Producing a pound of tomatoes requires about 23 gallons of water, which is equivalent to taking a 10-minute shower.</item>
+        <item>The production of a single gallon of milk requires about 1,000 gallons of water, and dairy farming is a major source of greenhouse gas emissions.</item>
+        <item>Eating a pound of lamb is equivalent to driving a car for about 25 miles in terms of greenhouse gas emissions.</item>
+        <item>Producing a pound of rice requires about 450 gallons of water, which is equivalent to showering for 1 hour and 15 minutes.</item>
+        <item>Eating a 4-ounce serving of tofu is equivalent to charging a smartphone for 100 hours in terms of greenhouse gas emissions.</item>
+        <item>Producing a pound of lettuce requires about 15 gallons of water, which is equivalent to flushing a toilet 5 times.</item>
+
     </string-array>
 </resources>

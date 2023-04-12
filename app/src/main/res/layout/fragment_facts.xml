@@ -8,10 +8,11 @@
     tools:context=".Facts">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="242dp"
-        android:layout_height="35dp"
+        android:id="@+id/tv_fact1"
+        android:layout_width="326dp"
+        android:layout_height="166dp"
         android:layout_marginStart="92dp"
         android:layout_marginEnd="95dp"
         android:text="Facts"
@@ -19,9 +20,10 @@
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.079" />
 
     <Button
         android:id="@+id/bt_BackToHome"
@@ -32,7 +34,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fact1"
         app:layout_constraintVertical_bias="0.94" />
+
+    <TextView
+        android:id="@+id/tv_fact2"
+        android:layout_width="349dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fact1" />
+
+    <TextView
+        android:id="@+id/tv_fact3"
+        android:layout_width="337dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fact2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
