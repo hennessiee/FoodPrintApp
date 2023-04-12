@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import fontys.greenplanduo.databinding.FragmentHomeBinding
 
 
+
 class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
     private lateinit var binding:FragmentHomeBinding
     private lateinit var thisContext:Context
@@ -21,6 +22,7 @@ class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
     private var fruit:Int=0
     private var veggies:Int=0
     private var dairy:Int=0
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -217,7 +219,21 @@ class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
         when (parent?.id) {
             R.id.sp_Protein -> {
                 binding.apply{
+                    val imageIds= intArrayOf(
+                        0,
+                        R.drawable.ic_beef,
+                        R.drawable.ic_chicken,
+                        R.drawable.ic_cod,
+                        R.drawable.ic_lamb,
+                        R.drawable.ic_mackerel,
+                        R.drawable.ic_pork,
+                        R.drawable.ic_chicken,
+                        R.drawable.ic_chicken,
+                        R.drawable.ic_chicken)
                     protein= position
+                    ivLogo.setImageResource(imageIds[position])
+
+
                 }
             }
             R.id.sp_Carbs->{

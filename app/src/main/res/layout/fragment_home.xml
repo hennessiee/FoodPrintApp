@@ -16,12 +16,12 @@
         android:layout_gravity="center"
         android:gravity="center">
 
-        <TextView
-            android:id="@+id/tv_logoHolder"
+        <ImageView
+            android:id="@+id/iv_Logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Logo" />
+
+            android:contentDescription="TODO" />
     </LinearLayout>
 
     <LinearLayout

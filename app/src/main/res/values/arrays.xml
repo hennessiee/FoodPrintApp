@@ -249,4 +249,7 @@
         <item>Eating a 4-ounce serving of tofu is equivalent to charging a smartphone for 100 hours in terms of greenhouse gas emissions.</item>
         <item>Producing a pound of lettuce requires about 15 gallons of water, which is equivalent to flushing a toilet 5 times.</item>
     </string-array>
+    <string-array name="protein_image">
+        <item>R.drawable.ic_chicken</item>
+    </string-array>
 </resources>
