@@ -163,7 +163,7 @@
                         android:layout_height="match_parent"
                         android:contentDescription="TODO"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_protein"
+                        android:src="@drawable/ic_carbs"
                         android:padding="2dp"/>
 
                 </RelativeLayout>
@@ -227,7 +227,7 @@
                         android:layout_height="match_parent"
                         android:contentDescription="TODO"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_protein"
+                        android:src="@drawable/ic_veggies"
                         android:padding="2dp"/>
                 </RelativeLayout>
                 <LinearLayout
@@ -289,7 +289,7 @@
                         android:layout_height="match_parent"
                         android:contentDescription="TODO"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_protein"
+                        android:src="@drawable/ic_fruits"
                         android:padding="2dp"/>
                 </RelativeLayout>
                 <LinearLayout
@@ -351,7 +351,7 @@
                         android:layout_height="match_parent"
                         android:contentDescription="TODO"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_protein"
+                        android:src="@drawable/ic_dairy"
                         android:padding="2dp"/>
                 </RelativeLayout>
                 <LinearLayout
@@ -374,22 +374,26 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:padding="10dp">
 
+            <Button
+                android:id="@+id/bt_Calculate"
+                android:layout_width="293dp"
+                android:layout_height="51dp"
+                android:backgroundTint="#B19CD8"
+                android:textColor="@color/white"
+                android:text="Calculate"
+                android:textAlignment="center" />
+
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/bt_Calculate"
-            android:layout_width="293dp"
-            android:layout_height="51dp"
-            android:text="Calculate"
-            android:textAlignment="center" />
-
-    </LinearLayout>
 
 </LinearLayout>

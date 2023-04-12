@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="protein">
-        <item>Select Item</item>
+        <item>None</item>
 
         <item>Beef</item>
         <item>Chicken/Poultry</item>
@@ -41,7 +41,7 @@
     </string-array>
 
     <string-array name="Carbohydrate">
-        <item>Select Item</item>
+        <item>None</item>
 
         <item>Bagels</item>
         <item>Baguette</item>
@@ -105,7 +105,7 @@
     </string-array>
 
     <string-array name="Vegetable">
-        <item>Select Item</item>
+        <item>None</item>
 
         <item>Broccoli</item>
         <item>Cucumber</item>
@@ -151,7 +151,7 @@
     </string-array>
 
     <string-array name="Fruits">
-    <item>Select Item</item>
+    <item>None</item>
     <item>Apples</item>
     <item>Bananas</item>
     <item>Grapes</item>
@@ -188,7 +188,7 @@
     </string-array>
 
     <string-array name="Milk_Dairy">
-        <item>Select Item</item>
+        <item>None</item>
         <item>Coconut Milk</item>
         <item>Cow Milk</item>
         <item>Dark Chocolate</item>

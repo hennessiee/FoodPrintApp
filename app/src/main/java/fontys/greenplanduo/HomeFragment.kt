@@ -238,22 +238,82 @@ class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
             }
             R.id.sp_Carbs->{
                 binding.apply{
+                    val imageIds= intArrayOf(
+                        R.drawable.ic_carbs,
+                        R.drawable.ic_bagel,
+                        R.drawable.ic_baguette,
+                        R.drawable.ic_bread,
+                        R.drawable.ic_croissant,
+                        R.drawable.ic_donut,
+                        R.drawable.ic_granola,
+                        R.drawable.ic_muesli,
+                        R.drawable.ic_naan,
+                        R.drawable.ic_pancake,
+                        R.drawable.ic_potatoes  ,
+                        R.drawable.ic_pita,
+                        R.drawable.ic_rice,
+                        R.drawable.ic_sourdough,
+                        R.drawable.ic_spagetti,
+                        R.drawable.ic_corn,
+                        R.drawable.ic_tofu,
+                        R.drawable.ic_tortilla)
+
                     carbs= position
+                    ivCarbs.setImageResource(imageIds[position])
                 }
             }
             R.id.sp_Veggies->{
                 binding.apply{
+                    val imageIds= intArrayOf(
+                        R.drawable.ic_veggies,
+                        R.drawable.ic_broccoli,
+                        R.drawable.ic_cucumber,
+                        R.drawable.ic_courgette,
+                        R.drawable.ic_corn,
+                        R.drawable.ic_carrots,
+                        R.drawable.ic_cauliflower,
+                        R.drawable.ic_lettuce,
+                        R.drawable.ic_salad,
+                        R.drawable.ic_mushrooms,
+                        R.drawable.ic_onions,
+                        R.drawable.ic_tomatoes)
                     veggies= position
+                    ivVeggies.setImageResource(imageIds[position])
                 }
             }
             R.id.sp_Fruits->{
                 binding.apply{
+                    val imageIds= intArrayOf(
+                        R.drawable.ic_fruits,
+                        R.drawable.ic_apple,
+                        R.drawable.ic_banana,
+                        R.drawable.ic_grape,
+                        R.drawable.ic_lemon,
+                        R.drawable.ic_lime,
+                        R.drawable.ic_melon,
+                        R.drawable.ic_orange,
+                        R.drawable.ic_strawberry,
+                        R.drawable.ic_watermelon,)
                     fruit= position
+                    ivFruits.setImageResource(imageIds[position])
                 }
             }
             R.id.sp_Dairy->{
                 binding.apply{
+                    val imageIds= intArrayOf(
+                        R.drawable.ic_dairy,
+                        R.drawable.ic_coconut,
+                        R.drawable.ic_milk,
+                        R.drawable.ic_chocolate,
+                        R.drawable.ic_cheese,
+                        R.drawable.ic_chocommk,
+                        R.drawable.ic_oatmilk,
+                        R.drawable.ic_parmesan,
+                        R.drawable.ic_soy,
+                       )
                     dairy= position
+                    ivDairy.setImageResource(imageIds[position])
+
                 }
             }
         }
