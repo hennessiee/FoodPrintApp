@@ -45,7 +45,7 @@ class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
             spDairy.onItemSelectedListener=this@HomeFragment
             spFruits.onItemSelectedListener=this@HomeFragment
 
-
+            spProtein.prompt=""
             btCalculate.setOnClickListener{
 
                 val co2Emissions:Float=calculateCo2Emissions().toFloat()
@@ -220,18 +220,18 @@ class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
             R.id.sp_Protein -> {
                 binding.apply{
                     val imageIds= intArrayOf(
-                        0,
+                        R.drawable.ic_protein,
                         R.drawable.ic_beef,
                         R.drawable.ic_chicken,
                         R.drawable.ic_cod,
                         R.drawable.ic_lamb,
                         R.drawable.ic_mackerel,
                         R.drawable.ic_pork,
-                        R.drawable.ic_chicken,
-                        R.drawable.ic_chicken,
-                        R.drawable.ic_chicken)
+                        R.drawable.ic_prawn,
+                        R.drawable.ic_salmon,
+                        R.drawable.ic_tuna)
                     protein= position
-                    ivLogo.setImageResource(imageIds[position])
+                    ivProtein.setImageResource(imageIds[position])
 
 
                 }
