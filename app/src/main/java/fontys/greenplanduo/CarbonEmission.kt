@@ -43,18 +43,18 @@ class CarbonEmission : Fragment() {
             waterEmission=args.waterEmission
             if(carbonEmission<0.5){
                 val mediaPlayer=MediaPlayer.create(requireContext(),R.raw.cheer)
-                mediaPlayer.setVolume(0.75f,0.75f)
+                mediaPlayer.setVolume(0.5f,0.5f)
                 mediaPlayer.start()
                 konfettiView.start(Party(
-                    speed = 30f,
-                    maxSpeed = 50f,
+                    speed = 15f,
+                    maxSpeed = 20f,
                     damping = 0.9f,
                     angle = Angle.BOTTOM,
                     spread = 180,
                     timeToLive = 9000L,
                     rotation = Rotation(),
                     colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
-                    emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
+                    emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(75),
                     position = Position.Relative(0.5, 0.0)
                 ))
             }
