@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.navigation.NavArgs
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -37,7 +38,7 @@ private lateinit var binding: FragmentWaterEmissionBinding
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             waterEmission=args.waterEmission
-            tvWaterEmission.text=waterEmission.toString()+"Litres of water"
+            tvWaterEmission.text=waterEmission.toString()+" Litres of water"
 
             if(waterEmission>100){
                 val mediaPlayer=MediaPlayer.create(requireContext(),R.raw.shower)
@@ -60,6 +61,8 @@ private lateinit var binding: FragmentWaterEmissionBinding
                     position = Position.Relative(0.5, 0.0)
                 ))
                 tvTitleWater.text="You wasted plenty of Water! You used:"
+                frameLayout2.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.blue))
+
             }
             else if(waterEmission<25){
                 val mediaPlayer= MediaPlayer.create(requireContext(),R.raw.cheer)
@@ -80,15 +83,19 @@ private lateinit var binding: FragmentWaterEmissionBinding
                 )
                 )
                 tvTitleWater.text="You're water saver! You used:"
+                frameLayout2.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.green))
+
             }
             else{
                 tvTitleWater.text="You did Okay! You used:"
+                frameLayout2.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.green))
+
 
             }
             var showerNumber=(waterEmission/9).toFloat()
-            var showerStripZeros=String.format("%.3f", showerNumber).replace("\\.?0*$".toRegex(), "")
+            var showerStripZeros=String.format("%.3f", showerNumber).replace("\\.?,0*$".toRegex(), "")
 
-            var showerEquivalent=showerStripZeros+"    minutes of showering"
+            var showerEquivalent=showerStripZeros+"  minutes of showering"
 
             tvShowerEquivalent.text=showerEquivalent
 

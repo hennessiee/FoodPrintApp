@@ -1,5 +1,6 @@
 package fontys.greenplanduo
 
+import android.graphics.Color
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.navigation.NavArgs
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -58,10 +60,13 @@ class CarbonEmission : Fragment() {
                     position = Position.Relative(0.5, 0.0)
                 ))
                 tvTitleCarbon.text="Well Done!, You only Emitted:"
+                frameLayout4.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.green))
+
             }
             else if (carbonEmission>2){
+                frameLayout4.setBackgroundColor(ContextCompat.getColor(binding.root.context, androidx.appcompat.R.color.material_blue_grey_800))
                 val mediaPlayer=MediaPlayer.create(requireContext(),R.raw.car)
-                mediaPlayer.setVolume(0.75f,0.75f)
+                mediaPlayer.setVolume(0.55f,0.55f)
                 mediaPlayer.start()
                 Handler(Looper.getMainLooper()).postDelayed({
                     mediaPlayer.stop()
@@ -80,10 +85,15 @@ class CarbonEmission : Fragment() {
                     position = Position.Relative(0.5, 0.0)
                 ))
                 tvTitleCarbon.text="Come on, You can be better! You Emitted:"
+                frameLayout4.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.grey))
 
             }
             else{
+                frameLayout4.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.green))
+
                 tvTitleCarbon.text="You were okay! You Emitted:"
+                frameLayout4.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.green))
+
 
             }
 

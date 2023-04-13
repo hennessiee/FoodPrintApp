@@ -199,7 +199,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:fontFamily="@font/sfpro_regular"
-                        android:text="grams" />
+                        android:text="pieces" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -401,7 +401,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:fontFamily="@font/sfpro_regular"
-                        android:text="grams" />
+                        android:text="grams/ml" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

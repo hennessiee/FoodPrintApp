@@ -123,21 +123,21 @@ class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
         val emissionsArray = resources.getStringArray(R.array.c_co2)
         val emissions = emissionsArray[carbs]
         binding.apply{
-            return (emissions.toDouble()*etCarbs.text.toString().toInt())/1000
+            return (emissions.toDouble()*etCarbs.text.toString().toInt())/100
         }
     }
     private fun getVegCo2(): Double {
         val emissionsArray = resources.getStringArray(R.array.v_co2)
         val emissions = emissionsArray[veggies]
         binding.apply{
-            return (emissions.toDouble()*etVeggies.text.toString().toInt())/1000
+            return (emissions.toDouble()*etVeggies.text.toString().toInt())/100
         }
     }
     private fun getFruitCo2(): Double {
         val emissionsArray = resources.getStringArray(R.array.f_co2)
         val emissions = emissionsArray[fruit]
         binding.apply{
-            return (emissions.toDouble()*etFruits.text.toString().toInt())/1000
+            return (emissions.toDouble()*etFruits.text.toString().toInt())/100
         }
     }
     private fun getDairyCo2(): Double {

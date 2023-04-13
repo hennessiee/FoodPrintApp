@@ -5,8 +5,6 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9DC"
-    android:backgroundTint="#9DC183"
     android:gravity="bottom|center"
     android:orientation="vertical"
     tools:context=".CarbonEmission"
@@ -27,6 +25,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -48,6 +47,7 @@
 
 
     <LinearLayout
+
         android:layout_width="350dp"
         android:layout_height="600dp"
         android:background="@drawable/rounded_corners"
@@ -62,49 +62,55 @@
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corners_co2"
             android:gravity="center|top"
+            android:orientation="vertical"
             android:radius="30dp"
-            android:orientation="vertical">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="48dp"
-    android:background="@drawable/rounded_corners_co2"
-    android:gravity="center|top"
-    android:radius="30dp">
-    <TextView
-        android:id="@+id/tv_titleCarbon"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:fontFamily="@font/sfpro_heavy"
-        android:gravity="center"
-        android:text="Status"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
-</LinearLayout>
+            android:padding="2dp"
+            android:id="@+id/linearlayouttitle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center|top"
+                android:radius="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_titleCarbon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/sfpro_heavy"
+                    android:gravity="center"
+                    android:text="Status"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/rounded_corners_co2"
                 android:gravity="center|top"
                 android:radius="30dp">
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/sfpro_heavy"
-                android:gravity="center"
-                android:text="Carbon Emissions"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/sfpro_heavy"
-                android:gravity="center"
-                android:text=" KG of CO₂"
-                android:textColor="#ffffff"
-                android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/sfpro_heavy"
+                    android:gravity="center"
+                    android:text="Carbon Emissions"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/sfpro_heavy"
+                    android:gravity="center"
+                    android:text=" KG of CO₂"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -113,34 +119,34 @@
             android:layout_height="wrap_content"
 
             android:gravity="center"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            >
+            android:layout_margin="16dp">
 
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/gifImageView"
-                android:layout_width="270dp"
-                android:layout_height="270dp"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
                 android:background="@drawable/rounded_corners"
                 android:src="@drawable/car"
                 tools:layout_editor_absoluteX="199dp"
                 tools:layout_editor_absoluteY="64dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="48dp"
 
-            android:gravity="center"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/tv_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:textSize="20sp"
+                android:text="That's the same as: "
                 android:textAlignment="center"
-                android:text="That's the same as: " />
+                android:textSize="20sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="48dp"
@@ -152,9 +158,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/sfpro_heavy"
+                android:gravity="center"
                 android:text="Driving in a car for: "
-                android:textSize="20sp"
-                android:gravity="center"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tv_kmOfCar"
@@ -177,9 +183,9 @@
                 android:id="@+id/bt_NextToWater"
                 android:layout_width="88dp"
                 android:layout_height="48dp"
+                android:backgroundTint="#B19CD8"
                 android:fontFamily="@font/sfpro_heavy"
-                android:text="NEXT"
-                android:backgroundTint="#B19CD8"/>
+                android:text="NEXT" />
         </LinearLayout>
     </LinearLayout>
 
