@@ -55,7 +55,7 @@ Yes they are, and backed by research.
 
 ## Demo Video
 
-[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://youtube.com/shorts/1XJBgydCXdI?feature=share
+[<img src="https://i.ytimg.com/vi/1XJBgydCXdI/maxresdefault.jpg" width="50%">](https://youtube.com/shorts/1XJBgydCXdI?feature=share
  "Food Print Demo Video")
 
 ## Authors
