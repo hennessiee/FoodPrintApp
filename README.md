@@ -24,10 +24,11 @@ Android Studio 4.0 or higher
 JDK 8 or higher
 To install the application:
 
-    1. Clone the repository from Gitlab.
-    2. Open the project in Android Studio.
-    3. Build the project using the Build menu.
-    4. Run the application on an emulator or device.
+1. Clone the repository from Gitlab.
+2. Open the project in Android Studio.
+3. Build the project using the Build menu.
+4. Run the application on an emulator or device.
+5. 
 ## Usage
 
 To use this app, you must install it first and run it in a virtual machine or your own Android phone. After that, follow these steps:
@@ -40,20 +41,20 @@ To use this app, you must install it first and run it in a virtual machine or yo
 
 #### Where did we get the data for the emissions of each food item?
 
-We did research on the web about emissions produced by different types of foods and encountered this website:
+We researched emissions produced by different types of foods on the web and found the following website:
 
 [Our World in Data]("https://ourworldindata.org/grapher/ghg-per-kg-poore")
 
-From the website above we curated the most common food to use in our application
+We curated the most common foods from this website to use in our application.
 
 
 #### How does the calculation work?
 
-We stored the CO2 and Water Emissions for each kilogram of food item, and calculated the total amount of Emissions by considering the input from the user for each food item.
+We stored the CO2 and water emissions for each kilogram of food item and calculated the total emissions by considering the input from the user for each food item.
 
-The average car uses 0.19kg of CO2 per kilometer, so to get the equivalent distance of 1kg of CO2, we need to divide the Emissions amount by 0.19, so 1kg of CO2 is the same as driving a car for 5.2 Kilometers
+The average car emits 0.19kg of CO2 per kilometer. To get the equivalent distance of 1kg of CO2, we need to divide the emissions amount by 0.19, so 1kg of CO2 is the same as driving a car for 5.2 kilometers.
 
-As for the water, an average 10 minute shower uses about 90 Liters of water, so we just have to divide the Total Water Emissions by 0.11, so 18 Liters of water is the same as showering for 2 minutes.
+An average 10-minute shower uses about 90 liters of water. To calculate the equivalent water usage for the meal, we divide the total water emissions by 0.11, so 18 liters of water is the same as showering for 2 minutes.
 
 #### Are the Facts Real?
 
