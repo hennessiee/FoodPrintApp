@@ -1,4 +1,3 @@
-
 # Food Print Android App
 
 An application with a goal to spread awareness about Pollution and Emissions so people can realize that the food that they eat can cause major damage to the environment if not selected properly
@@ -54,6 +53,7 @@ As for the water, an average 10 minute shower uses about 90 Liters of water, so 
 
 Yes they are, and backed by research.
 
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
 
 ## Authors
 
