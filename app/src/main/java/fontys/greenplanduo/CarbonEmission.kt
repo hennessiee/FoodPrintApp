@@ -57,6 +57,7 @@ class CarbonEmission : Fragment() {
                     emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(75),
                     position = Position.Relative(0.5, 0.0)
                 ))
+                tvTitleCarbon.text="Well Done!, You only Emitted:"
             }
             else if (carbonEmission>2){
                 val mediaPlayer=MediaPlayer.create(requireContext(),R.raw.car)
@@ -78,6 +79,12 @@ class CarbonEmission : Fragment() {
                     emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
                     position = Position.Relative(0.5, 0.0)
                 ))
+                tvTitleCarbon.text="Come on, You can be better! You Emitted:"
+
+            }
+            else{
+                tvTitleCarbon.text="You were okay! You Emitted:"
+
             }
 
 
@@ -85,7 +92,7 @@ class CarbonEmission : Fragment() {
             var carbonEmissionShortened=String.format("%.3f", carbonEmission)
             textView3.text=carbonEmissionShortened
             var carEquivalent=carbonEmission/0.2
-            tvKmOfCar.text=String.format("%.3f", carEquivalent)
+            tvKmOfCar.text=String.format("%.3f", carEquivalent)+" km"
 
 
             btNextToWater.setOnClickListener {
