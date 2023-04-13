@@ -28,7 +28,13 @@ To install the application:
     2. Open the project in Android Studio.
     3. Build the project using the Build menu.
     4. Run the application on an emulator or device.
+## Usage
 
+To use this app, you must install the app first and run it in a virtual machine or your own android phone, after that follow these steps:
+
+- Select what are the main components of the meal that you ate, or going to eat. 
+- Fill in the approximate amount of each food, grams or ililiters for protein and dairy, and piece or portions for Carbohydrates, Vegetables, and Fruits
+- Click the next button, and the app will show the insights about the meal you have submitted.
     
 ## FAQ
 
