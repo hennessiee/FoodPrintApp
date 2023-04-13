@@ -28,7 +28,7 @@ To install the application:
 2. Open the project in Android Studio.
 3. Build the project using the Build menu.
 4. Run the application on an emulator or device.
-5. 
+
 ## Usage
 
 To use this app, you must install it first and run it in a virtual machine or your own Android phone. After that, follow these steps:
