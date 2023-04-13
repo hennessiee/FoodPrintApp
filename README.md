@@ -1,6 +1,6 @@
 # Food Print Android App
 
-An application with a goal to spread awareness about Pollution and Emissions so people can realize that the food that they eat can cause major damage to the environment if not selected properly
+The objective of the application is to raise awareness regarding the adverse impact of pollution and emissions on the environment, particularly with regard to the selection of food items. The application aims to educate individuals about the significant role that their food choices play in contributing to environmental degradation and to encourage informed decision-making to mitigate this impact.
 
 
 
@@ -30,11 +30,11 @@ To install the application:
     4. Run the application on an emulator or device.
 ## Usage
 
-To use this app, you must install the app first and run it in a virtual machine or your own android phone, after that follow these steps:
+To use this app, you must install it first and run it in a virtual machine or your own Android phone. After that, follow these steps:
 
-- Select what are the main components of the meal that you ate, or going to eat. 
-- Fill in the approximate amount of each food, grams or ililiters for protein and dairy, and piece or portions for Carbohydrates, Vegetables, and Fruits
-- Click the next button, and the app will show the insights about the meal you have submitted.
+1. Select the main components of the meal that you ate or plan to eat.
+2.  Fill in the approximate amount of each food item in grams, milliliters for protein and dairy, and pieces or portions for carbohydrates, vegetables, and fruits.
+3.  Click the "Next" button, and the app will show insights about the meal you have submitted.e next button, and the app will show the insights about the meal you have submitted.
     
 ## FAQ
 
