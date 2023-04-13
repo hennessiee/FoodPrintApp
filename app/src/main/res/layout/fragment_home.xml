@@ -14,88 +14,99 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginTop="7dp">
 
         <ImageView
             android:id="@+id/iv_Logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:contentDescription="TODO" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_logo"
+            android:contentDescription="TODO"
+            android:padding="-20dp"
+            />
     </LinearLayout>
-
-
 
 
     <LinearLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="@drawable/roundedshape_white"
-        android:orientation="vertical"
-        android:layout_margin="10dp">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center|center_vertical"
-            android:layout_margin="10dp">
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
             <TextView
                 android:id="@+id/tvHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro_heavy"
                 android:text="Insert Your Meal Details"
+
                 android:textAlignment="viewStart"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro_regular"
+                android:padding="7dp"
+                android:textAlignment="center"
+                android:text="Please just fill in the main components of your meal"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/roundedshape_grey"
             android:gravity="center|center_vertical"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_protein"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/sfpro_heavy"
                 android:text="Protein"
-                android:textStyle="bold"
-                android:layout_marginTop="-5dp"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:gravity="center|center_horizontal"
+                android:layout_marginTop="-5dp"
                 android:layout_marginBottom="-5dp"
-                android:layout_marginTop="-5dp">
+                android:gravity="center|center_horizontal">
 
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="20dp"
-                    >
+                    android:layout_marginRight="20dp">
 
                     <Spinner
                         android:id="@+id/sp_Protein"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:padding="50dp"/>
+                        android:padding="50dp" />
 
                     <ImageView
                         android:id="@+id/iv_Protein"
-                        android:layout_width="65dp"
+                        android:layout_width="60dp"
                         android:layout_height="match_parent"
                         android:contentDescription="TODO"
+                        android:padding="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_protein"
-                        android:padding="2dp"/>
+                        android:src="@drawable/ic_protein" />
 
                 </RelativeLayout>
 
@@ -116,6 +127,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
+                        android:fontFamily="@font/sfpro_regular"
                         android:text="grams" />
                 </LinearLayout>
 
@@ -127,46 +139,49 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:background="@drawable/roundedshape_grey"
             android:gravity="center|center_vertical"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_Carbs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/sfpro_heavy"
                 android:text="Carbohydrates"
-                android:textStyle="bold"
-                android:layout_marginTop="-5dp" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:gravity="center|center_horizontal"
+                android:layout_height="60dp"
+                android:layout_marginTop="-5dp"
                 android:layout_marginBottom="-5dp"
-                android:layout_marginTop="-5dp">
+                android:gravity="center|center_horizontal">
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="20dp"
-                    >
-                <Spinner
-                    android:id="@+id/sp_Carbs"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:padding="50dp" />
+                    android:layout_marginRight="20dp">
+
+                    <Spinner
+                        android:id="@+id/sp_Carbs"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="50dp" />
+
                     <ImageView
                         android:id="@+id/iv_Carbs"
-                        android:layout_width="65dp"
+                        android:layout_width="60dp"
                         android:layout_height="match_parent"
                         android:contentDescription="TODO"
+                        android:padding="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_carbs"
-                        android:padding="2dp"/>
+                        android:src="@drawable/ic_carbs" />
 
                 </RelativeLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -183,6 +198,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
+                        android:fontFamily="@font/sfpro_regular"
                         android:text="grams" />
                 </LinearLayout>
             </LinearLayout>
@@ -192,44 +208,48 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:background="@drawable/roundedshape_grey"
             android:gravity="center|center_vertical"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_Veggies"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/sfpro_heavy"
                 android:text="Vegetables"
-                android:textStyle="bold"
-                android:layout_marginTop="-5dp" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:gravity="center|center_horizontal"
+                android:layout_marginTop="-5dp"
                 android:layout_marginBottom="-5dp"
-                android:layout_marginTop="-5dp">
+                android:gravity="center|center_horizontal">
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="20dp"
-                    >
-                <Spinner
-                    android:id="@+id/sp_Veggies"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:padding="50dp" />
+                    android:layout_marginRight="20dp">
+
+                    <Spinner
+                        android:id="@+id/sp_Veggies"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="50dp" />
+
                     <ImageView
                         android:id="@+id/iv_Veggies"
-                        android:layout_width="65dp"
+                        android:layout_width="60dp"
                         android:layout_height="match_parent"
                         android:contentDescription="TODO"
+                        android:padding="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_veggies"
-                        android:padding="2dp"/>
+                        android:src="@drawable/ic_veggies" />
                 </RelativeLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -246,7 +266,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
-                        android:text="grams" />
+                        android:fontFamily="@font/sfpro_regular"
+                        android:text="pieces" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -254,44 +275,48 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:background="@drawable/roundedshape_grey"
             android:gravity="center|center_vertical"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_Fruits"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/sfpro_heavy"
                 android:text="Fruits"
-                android:textStyle="bold"
-                android:layout_marginTop="-5dp" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:gravity="center|center_horizontal"
+                android:layout_height="60dp"
+                android:layout_marginTop="-5dp"
                 android:layout_marginBottom="-5dp"
-                android:layout_marginTop="-5dp">
+                android:gravity="center|center_horizontal">
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="20dp"
-                    >
-                <Spinner
-                    android:id="@+id/sp_Fruits"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:padding="50dp" />
+                    android:layout_marginRight="20dp">
+
+                    <Spinner
+                        android:id="@+id/sp_Fruits"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="50dp" />
+
                     <ImageView
                         android:id="@+id/iv_Fruits"
                         android:layout_width="65dp"
                         android:layout_height="match_parent"
                         android:contentDescription="TODO"
+                        android:padding="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_fruits"
-                        android:padding="2dp"/>
+                        android:src="@drawable/ic_fruits" />
                 </RelativeLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -302,13 +327,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:text="0"/>
+                        android:text="0" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
-                        android:text="grams" />
+                        android:fontFamily="@font/sfpro_regular"
+                        android:text="pieces" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -316,44 +342,48 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:background="@drawable/roundedshape_grey"
             android:gravity="center|center_vertical"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_Dairy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/sfpro_heavy"
                 android:text="Dairy"
-                android:textStyle="bold"
-                android:layout_marginTop="-5dp"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:gravity="center|center_horizontal"
+                android:layout_height="60dp"
+                android:layout_marginTop="-5dp"
                 android:layout_marginBottom="-5dp"
-                android:layout_marginTop="-5dp">
+                android:gravity="center|center_horizontal">
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="20dp"
-                    >
-                <Spinner
-                    android:id="@+id/sp_Dairy"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:padding="50dp" />
+                    android:layout_marginRight="20dp">
+
+                    <Spinner
+                        android:id="@+id/sp_Dairy"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="50dp" />
+
                     <ImageView
                         android:id="@+id/iv_Dairy"
                         android:layout_width="65dp"
                         android:layout_height="match_parent"
                         android:contentDescription="TODO"
+                        android:padding="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_dairy"
-                        android:padding="2dp"/>
+                        android:src="@drawable/ic_dairy" />
                 </RelativeLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -370,30 +400,32 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
+                        android:fontFamily="@font/sfpro_regular"
                         android:text="grams" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:layout_marginTop="5dp"
-            android:padding="10dp">
+            android:padding="0dp">
 
             <Button
                 android:id="@+id/bt_Calculate"
                 android:layout_width="293dp"
                 android:layout_height="51dp"
                 android:backgroundTint="#B19CD8"
-                android:textColor="@color/white"
+                android:fontFamily="@font/sfpro_heavy"
                 android:text="Calculate"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@color/white" />
 
         </LinearLayout>
     </LinearLayout>
-
 
 
 </LinearLayout>

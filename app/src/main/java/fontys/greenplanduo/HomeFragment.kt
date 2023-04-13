@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.NumberPicker
 
 import androidx.navigation.fragment.findNavController
 import fontys.greenplanduo.databinding.FragmentHomeBinding
@@ -38,6 +39,7 @@ class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
         super.onViewCreated(view, savedInstanceState)
 
         binding.apply{
+
             getAllFoodData()
             spProtein.onItemSelectedListener=this@HomeFragment
             spCarbs.onItemSelectedListener=this@HomeFragment
@@ -310,7 +312,7 @@ class HomeFragment :Fragment() ,AdapterView.OnItemSelectedListener   {
                         R.drawable.ic_oatmilk,
                         R.drawable.ic_parmesan,
                         R.drawable.ic_soy,
-                       )
+                    )
                     dairy= position
                     ivDairy.setImageResource(imageIds[position])
 
